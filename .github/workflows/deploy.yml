@@ -19,8 +19,9 @@ jobs:
       - name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v1
         with:
-          workload_identity_provider: 'projects/821220798323/locations/global/workloadIdentityPools/knaks-pool/providers/knaks-provider'
-          service_account_email: 'knaks-service-account@knaks-cf363.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/821220798323/locations/global/workloadIdentityPools/knaks-cf363/providers/knaks-provider'
+          service_account: 'knaks-service-account@knaks-cf363.iam.gserviceaccount.com'
+          id_token_audience: 'https://knaks.app'
 
       - name: Deploy to Google Cloud
         run: |
