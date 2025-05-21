@@ -8,32 +8,30 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('logo_knaks.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: white;
+      background-color: #fdfaf6;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      flex-direction: column;
-      text-align: center;
+      font-family: Arial, sans-serif;
     }
 
-    h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin: 0;
+    .logo {
+      max-width: 80%;
+      height: auto;
     }
 
-    p {
+    .tagline {
+      margin-top: 1.5rem;
       font-size: 1.5rem;
-      margin-top: 1rem;
+      font-style: italic;
+      color: #1a1a1a; /* dark text */
     }
   </style>
 </head>
 <body>
-  <h1>KNAKS</h1>
-  <p>What's Yours?</p>
+  <img src="logo_knaks.png" alt="KNAKS Logo" class="logo" />
+  <p class="tagline">What’s Yours?</p>
 </body>
 </html>
